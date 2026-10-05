@@ -3,6 +3,12 @@
   <groupId>Tek</groupId>
   <artifactId>Tryp.com</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+  
   <dependencies>
   <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>

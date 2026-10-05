@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="genericUtility.ListenerImplementationClass"></listener>
+</listeners>
+  <test  name="Test">
+    <classes>
+      <class name="com.tryp.one_way.Package_ChackoutTest"/>
+      <class name="com.tryp.trips.PackageTest"/>
+      <class name="com.tryp.trip_stay.AccommodationTest"/>
+      <class name="com.tryp.one_way.ChangeTransport_CheckoutTest"/>
+      <class name="com.tryp.trip_stay.Home_Checkout"/>
+      <class name="com.tryp.trip_stay.Package_BookmarkTest"/>
+      <class name="com.tryp.trips.SearchTest"/>
+      <class name="com.tryp.trips.Travellers_checkoutTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

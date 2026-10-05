@@ -7,21 +7,21 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="smoke"/>
+        <include name="system"/>
       </run>
     </groups>
     <classes>
-      <class name="com.tryp.trip_stay.AccommodationTest">
+      <class name="com.tryp.trip_stay.Home_Checkout">
         <methods>
+          <include name="checkoutNegativeTest"/>
           <include name="LogoutFromApp"/>
-          <include name="CloseBrowser"/>
           <include name="DbConnection"/>
-          <include name="changeAccommodationTest"/>
+          <include name="CloseBrowser"/>
           <include name="LaunchBrowser"/>
           <include name="CloseDb"/>
           <include name="LoginToApp"/>
         </methods>
-      </class> <!-- com.tryp.trip_stay.AccommodationTest -->
+      </class> <!-- com.tryp.trip_stay.Home_Checkout -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

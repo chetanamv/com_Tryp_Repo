@@ -17,14 +17,15 @@ public class Package_ChackoutTest extends BaseClass {
 	@Test(groups="integration")
 	public void addPackageToCheckout() throws Exception {
 		//1.Navigate to one-way page 
-		//hp.getCookies().click();
+		hp.getCookies().click();
 		hp.getOne_wayBtn().click();
 		
 		//2.search for package
 		TripsPage tp = new TripsPage(driver);
 		tp.getWhereToGoBtn().click();
 		OneWayPage op= new OneWayPage(driver);
-		op.getDepartBtn().click();
+		tp.getDepartfrmBtn().click();
+		
 		tp.getPlaceBtn().click();
 		String orgPlace = tp.getPlaceName().getText();
 		op.getWhereToGoBtn().click();
@@ -60,14 +61,14 @@ public class Package_ChackoutTest extends BaseClass {
 	@Test(groups="system")
 	public void Home_PaymentPage() throws Exception {
 		//1.Navigate to one-way page 
-		hp.getCookies().click();
+		//hp.getCookies().click();
 		hp.getOne_wayBtn().click();
 		
 		//2.search for package
 		TripsPage tp = new TripsPage(driver);
 		tp.getWhereToGoBtn().click();
 		OneWayPage op= new OneWayPage(driver);
-		op.getDepartBtn().click();
+		tp.getDepartfrmBtn().click();
 		tp.getPlaceBtn().click();
 		String orgPlace = tp.getPlaceName().getText();
 		op.getWhereToGoBtn().click();

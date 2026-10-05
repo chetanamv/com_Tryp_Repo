@@ -27,7 +27,7 @@ public class ChangeTransport_CheckoutTest extends BaseClass {
 		TripsPage tp = new TripsPage(driver);
 		tp.getWhereToGoBtn().click();
 		OneWayPage op = new OneWayPage(driver);
-		op.getDepartBtn().click();
+		tp.getDepartfrmBtn().click();
 		tp.getPlaceBtn().click();
 		String orgPlace = tp.getPlaceName().getText();
 		op.getWhereToGoBtn().click();

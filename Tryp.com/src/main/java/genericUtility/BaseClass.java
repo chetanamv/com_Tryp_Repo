@@ -28,14 +28,14 @@ public class BaseClass {
 		public WebDriver sdriver;
 		public HomePage hp;
 
-		@BeforeSuite(groups = { "smoke", "regrassion" })
+		@BeforeSuite(alwaysRun=true)
 		public void DbConnection() {
 			System.out.println("============connect to DB, Report config============");
 
 		}
 
 		@Parameters("Browser")
-		@BeforeClass(groups = { "smoke", "regrassion" })
+		@BeforeClass(alwaysRun=true)
 		public void LaunchBrowser() throws Exception {
 			System.out.println("===============Launch Browser================");
 			// String b=browser;
@@ -49,7 +49,7 @@ public class BaseClass {
 			wu.implicitWait(driver, 20);
 		}
 
-		@BeforeMethod(groups = { "smoke", "regrassion" })
+		@BeforeMethod(alwaysRun=true)
 		public void LoginToApp() throws Exception {
 			System.out.println("===============Login to Application================");
 			String URL=System.getProperty("url", pu.getProperty("url"));
@@ -64,7 +64,7 @@ public class BaseClass {
 			
 		}
 
-		@AfterMethod(groups = { "smoke", "regrassion" })
+		@AfterMethod(alwaysRun=true)
 		public void LogoutFromApp() {
 			System.out.println("===============Logout form Application========");
 			wu.javaScriptClickOnElement(driver,hp.getMenuBtn());
@@ -72,13 +72,13 @@ public class BaseClass {
 
 		}
 
-		@AfterClass(groups = { "smoke", "regrassion" })
+		@AfterClass(alwaysRun=true)
 		public void CloseBrowser() {
 			System.out.println("===============Close Browser================");
 			driver.quit();
 		}
 
-		@AfterSuite(groups = { "smoke", "regrassion" })
+		@AfterSuite(alwaysRun=true)
 		public void CloseDb() {
 			System.out.println("======close Data Base, Report backup======= ");
 			

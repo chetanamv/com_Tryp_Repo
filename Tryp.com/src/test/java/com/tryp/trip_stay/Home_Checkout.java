@@ -36,7 +36,7 @@ public class Home_Checkout extends BaseClass {
 		wu.javaScriptClickOnElement(driver, tsp.getPackages());
 		
 		//change accommodation 
-		wu.expicitWait_visibility(driver, tsp.getAcc_changeBtn());
+		wu.expicitWait_eleClickable(driver, tsp.getAcc_changeBtn());
 		wu.javaScriptClickOnElement(driver, tsp.getAcc_changeBtn());
 		wu.expicitWait_eleClickable(driver, tsp.getViewHotelBtn());
 		tsp.getViewHotelBtn().click();

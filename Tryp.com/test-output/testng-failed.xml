@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tryp.trip_stay.AccommodationTest">
+      <class name="com.tryp.trip_stay.Home_Checkout">
         <methods>
+          <include name="checkoutNegativeTest"/>
           <include name="LogoutFromApp"/>
           <include name="DbConnection"/>
           <include name="CloseBrowser"/>
-          <include name="changeAccommodationTest"/>
           <include name="LaunchBrowser"/>
           <include name="CloseDb"/>
           <include name="LoginToApp"/>
         </methods>
-      </class> <!-- com.tryp.trip_stay.AccommodationTest -->
+      </class> <!-- com.tryp.trip_stay.Home_Checkout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
